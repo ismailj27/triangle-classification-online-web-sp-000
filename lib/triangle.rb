@@ -10,7 +10,7 @@ class Triangle
   end
   
   def validate_triangle
-    if (length_1 == 0 || length_1 < 0 || length_2 < 0 ) || (length_3 < 0) || (length_3/3 == (length_1 && length_2)) || (length_2/2 == (length_1 || length_3) || ((length_2 + length_3) < length_1)
+    if (length_1 == 0 || length_1 < 0 || length_2 < 0 ) || (length_3 < 0) || (length_3/3 == (length_1 && length_2)) || (length_2/2 == (length_1 || length_3)) || ((length_2 + length_3) < length_1)
       begin
           raise TriangleError
       end
